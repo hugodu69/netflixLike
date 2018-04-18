@@ -85,17 +85,57 @@ body {
 
 
 /*//////////////////////////////////////////*/
-/*main*/
+/*video*/
 
+/*end video*/
+
+
+
+
+/*//////////////////////////////////////////*/
+/*main*/
+#main {
+    display: row;
+}
 /*end main*/
 
 
 
 
 /*//////////////////////////////////////////*/
-/*video*/
+/*slider*/
+.slider {
+    margin: 50px 0px;
+    border: 1px solid red;
+    display: flex;
+}
+/**/
+.slider .video {
+    position: relative;
+    width: 220px;
+    height: 120px;
+    margin: 0px 2px;
+    overflow: hidden;
+    transition: all 0.3s 0.2s;
+}
+.slider .video * {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+.slider .video .movie {
 
-/*end video*/
+}
+.slider .video .movie-hover {
+    opacity: 0;
+}
+.slider .video:hover {
+    width: calc(220px * 2);
+    height: calc(120px * 2);
+    margin-top: calc(-120px / 2);
+}
+/*end slider*/
 
 
 
