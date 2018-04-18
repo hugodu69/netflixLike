@@ -110,5 +110,89 @@ body {
 
 /*//////////////////////////////////////////*/
 /*footer*/
+.all-foot {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 80px 0 80px;
+    background-color: #202441;
+    height: 200px;
+}
 
+.socials h4{
+    color: #fbfbfb;
+    text-align: center;
+}
+
+.socials .icon{
+    font-size: 30px;
+    padding-top: 15px;
+    color: #fbfbfb;
+    padding-top: 20px;
+    word-spacing: 10px;
+}
+
+.icon a {
+    text-decoration: none;
+    color: #fbfbfb;
+    outline: none;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: #fbfbfb;
+    outline: none;
+}
+
+.copyright {
+    color:#fbfbfb;
+    text-align: center;
+}
+
+.partners {
+    color:#fbfbfb;
+}
+
+.partners h4{
+    text-align: center;
+}
+
+.gifts  {
+    text-align: center;
+}
+
+.gifts a {
+    text-decoration: none;
+    color: #fbfbfb;
+    outline:none;
+}
+
+.img-flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.canal {
+    width: 60px;
+    height: 40px;
+}
+
+.netflix {
+    width: 120px;
+    height: 80px;
+}
+
+.amazon {
+    width: 60px;
+    height: 40px;
+}
+
+.youtubered {
+    width: 130px;
+    height: 30px;
+}
+
+.ytr-div {
+    padding-top: 25px;
+}
 /*end footer*/
