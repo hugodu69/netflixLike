@@ -27,13 +27,14 @@ body {
   left: 0;
   right: 0;
   width: 100%;
+  height: 49px;
   padding-top: 1%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   position: fixed;
   z-index: 1;
-  background-color: rgba(30,30,30,0.5)
+  background-color: rgba(30,30,30,0.5);
 }
 
 .navbar ul {
@@ -41,7 +42,7 @@ body {
   flex-direction: row;
   width: 55%;
   justify-content: center;
-  padding-top: 20px;
+  padding-top: 12px;
 }
 
 .navbar ul li {
@@ -64,7 +65,7 @@ body {
 .navbar .fas {
   color: #fbfbfb;
   font-size: 40px;
-  margin-top: 10px;
+  margin-top: 1px;
 }
 
 .navbar .icon{
@@ -78,6 +79,16 @@ body {
 .navbar .categories ul li a:hover{
 	font-size: 20px;
 	transition: 0.5s;
+}
+
+.navbar .logo{
+  margin-top: 1%;
+  margin-left: 1%;
+}
+
+.navbar .logo img{
+  width: 80px;
+  height: 40px;
 }
 /*end navabar*/
 
