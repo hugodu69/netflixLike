@@ -118,6 +118,8 @@ body {
 /*main*/
 #main {
     display: row;
+    width: 100%;
+    overflow: hidden;
 }
 /*end main*/
 
@@ -127,35 +129,48 @@ body {
 /*//////////////////////////////////////////*/
 /*slider*/
 .slider {
-    margin: 50px 0px;
-    border: 1px solid red;
+    position: relative;
+    margin: 100px 0px;
     display: flex;
+		width: calc(100% + 188px);
+		flex-wrap: nowrap;
 }
-/**/
+.slider #title {
+    position: absolute;
+		left: 10px;
+		top: -40px;
+		font-size: 20px;
+		color: white;
+}
 .slider .video {
     position: relative;
-    width: 220px;
+    width: 188px;
     height: 120px;
     margin: 0px 2px;
-    overflow: hidden;
     transition: all 0.3s 0.2s;
 }
-.slider .video * {
+.slider .video img {
     position: absolute;
     top: 0px;
     width: 100%;
     height: 100%;
 }
 .slider .video .movie {
-
+		opacity: 1;
 }
 .slider .video .movie-hover {
     opacity: 0;
+    transition: all 0.7s 0.2s;
 }
 .slider .video:hover {
-    width: calc(220px * 2);
+    width: calc(188px * 2);
     height: calc(120px * 2);
     margin-top: calc(-120px / 2);
+}
+.slider .video:hover .movie {
+}
+.slider .video:hover .movie-hover {
+		opacity: 1;
 }
 /*end slider*/
 
