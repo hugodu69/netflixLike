@@ -85,17 +85,57 @@ body {
 
 
 /*//////////////////////////////////////////*/
-/*main*/
+/*video*/
 
+/*end video*/
+
+
+
+
+/*//////////////////////////////////////////*/
+/*main*/
+#main {
+    display: row;
+}
 /*end main*/
 
 
 
 
 /*//////////////////////////////////////////*/
-/*video*/
+/*slider*/
+.slider {
+    margin: 50px 0px;
+    border: 1px solid red;
+    display: flex;
+}
+/**/
+.slider .video {
+    position: relative;
+    width: 220px;
+    height: 120px;
+    margin: 0px 2px;
+    overflow: hidden;
+    transition: all 0.3s 0.2s;
+}
+.slider .video * {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+.slider .video .movie {
 
-/*end video*/
+}
+.slider .video .movie-hover {
+    opacity: 0;
+}
+.slider .video:hover {
+    width: calc(220px * 2);
+    height: calc(120px * 2);
+    margin-top: calc(-120px / 2);
+}
+/*end slider*/
 
 
 
@@ -110,5 +150,89 @@ body {
 
 /*//////////////////////////////////////////*/
 /*footer*/
+.all-foot {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 80px 0 80px;
+    background-color: #202441;
+    height: 200px;
+}
 
+.socials h4{
+    color: #fbfbfb;
+    text-align: center;
+}
+
+.socials .icon{
+    font-size: 30px;
+    padding-top: 15px;
+    color: #fbfbfb;
+    padding-top: 20px;
+    word-spacing: 10px;
+}
+
+.icon a {
+    text-decoration: none;
+    color: #fbfbfb;
+    outline: none;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: #fbfbfb;
+    outline: none;
+}
+
+.copyright {
+    color:#fbfbfb;
+    text-align: center;
+}
+
+.partners {
+    color:#fbfbfb;
+}
+
+.partners h4{
+    text-align: center;
+}
+
+.gifts  {
+    text-align: center;
+}
+
+.gifts a {
+    text-decoration: none;
+    color: #fbfbfb;
+    outline:none;
+}
+
+.img-flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.canal {
+    width: 60px;
+    height: 40px;
+}
+
+.netflix {
+    width: 120px;
+    height: 80px;
+}
+
+.amazon {
+    width: 60px;
+    height: 40px;
+}
+
+.youtubered {
+    width: 130px;
+    height: 30px;
+}
+
+.ytr-div {
+    padding-top: 25px;
+}
 /*end footer*/
