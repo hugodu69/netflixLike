@@ -178,7 +178,7 @@ body {
     font-size: 30px;
     padding-top: 15px;
     color: #fbfbfb;
-    padding-top: 20px;
+    padding-top: 40px;
     word-spacing: 10px;
 }
 
@@ -199,6 +199,10 @@ body {
     text-align: center;
 }
 
+.copyright p {
+    padding-top: 50px;
+}
+
 .partners {
     color:#fbfbfb;
 }
@@ -207,11 +211,18 @@ body {
     text-align: center;
 }
 
-.gifts  {
+.gifts h4 {
     text-align: center;
+    color: #fbfbfb;
 }
 
-.gifts a {
+.gift-icon  {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 40px;
+}
+
+.gift-icon a {
     text-decoration: none;
     color: #fbfbfb;
     outline:none;
@@ -222,6 +233,9 @@ body {
     justify-content: space-around;
 }
 
+.img-partners {
+    padding-top: 30px;
+}
 
 .canal {
     width: 60px;
