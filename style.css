@@ -132,6 +132,9 @@ body {
 /*//////////////////////////////////////////*/
 /*slider*/
 .slider {
+	position: relative;
+}
+.slider .wrapper {
     position: relative;
     margin: 100px 0px;
 		/*decal sur la gauche pour afficher en premier la seconde page*/
@@ -139,40 +142,41 @@ body {
     display: flex;
 		width: calc(400% + 188px);
 		flex-wrap: nowrap;
+		transition: all 1s;
 }
 .slider .slideTitle {
     position: absolute;
-		left: calc(25% - 52px);
+		left: 0px;
 		top: -40px;
 		font-size: 20px;
 		color: #817882;
 }
-.slider .video {
+.slider .wrapper .video {
     position: relative;
     width: 188px;
     height: 120px;
     margin: 0px 2px;
     transition: all 0.3s 0.2s;
 }
-.slider .video img {
+.slider .wrapper .video img {
     position: absolute;
     top: 0px;
     width: 100%;
     height: 100%;
 }
-.slider .video .movie {
+.slider .wrapper .video .movie {
 		opacity: 1;
 }
-.slider .video .movie-hover {
+.slider .wrapper .video .movie-hover {
     opacity: 0;
     transition: all 0.7s 0.2s;
 }
-.slider .video:hover {
+.slider .wrapper .video:hover {
     width: calc(188px * 2);
     height: calc(120px * 2);
     margin-top: calc(-120px / 2);
 }
-.slider .video:hover .movie-hover {
+.slider .wrapper .video:hover .movie-hover {
 		opacity: 1;
 }
 /*les fleches*/
@@ -180,36 +184,82 @@ body {
 .slider input {
 	display: none;
 }
-/*emplacement des fleches*/
+/*dessin des fleches pour les slides du milieu*/
 .slider .btn {
 	position: absolute;
 	top: 0px;
 	width: 50px;
 	height: 120px;
-	background-color: red;
-	opacity: 0;
-	z-index: 1;
+	background-color: transparent;
+	opacity: 1;
+	z-index: 2;
 	transition: all 0.5s;
 }
 .slider .leftbtn {
-	left: calc(25% - 52px);
+	left: 10px;
 }
 .slider .rightbtn {
-	left: calc(50% - 160px);
+	right: 10px;
 }
-/*leur apparition au hover*/
+/*dessin des fleches pour les slides du bord*/
+.slider .leftbrd {
+	z-index: 1;
+	background-color: rgba(150, 150, 150, 0.5);
+}
+.slider .leftbrd:after {
+	content: "";
+	position: absolute;
+	top: 45px;
+	left: 15px;
+	width: 0px;
+	height: 0px;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	border-left: 20px solid rgba(250, 250, 250, 0.8);
+}
+.slider .rightbrd {
+	z-index: 1;
+	background-color: rgba(150, 150, 150, 0.5);
+}
+.slider .rightbrd:after {
+	content: "";
+	position: absolute;
+	top: 45px;
+	right: 15px;
+	width: 0px;
+	height: 0px;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	border-right: 20px solid rgba(250, 250, 250, 0.8);
+}
+/*l'apparition des fleches au hover*/
 .slider:hover .btn {
 	opacity: 1;
 }
-/*apparence au clic*/
-.slider .btn:active {
-	background-color: blue;
-}
 /*apparence au check*/
-.slider input:checked + label {
-	background-color: green;
+.slider input:checked + .btn {
+	display: none;
 }
 /*le deplacement du slide avec les fleches*/
+/*entre les slides du milieu*/
+.slider input#right:checked ~ .wrapper {
+		margin-left: calc(-200% + 20px);
+}
+/*entre les slides du bord*/
+.slider .leftbrd:focus ~ .wrapper {
+	animation: 1s slideright;
+}
+.slider .rightbrd:focus ~ .wrapper {
+	animation: 1s slideleft;
+}
+@keyframes slideleft {
+	0% {margin-left: calc(-300% + 30px);}
+	100% {margin-left: calc(-200% + 20px);}
+}
+@keyframes slideright {
+	0% {margin-left: 0%;}
+	100% {margin-left: calc(-100% + 10px);}
+}
 
 /*end slider*/
 
