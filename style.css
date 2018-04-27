@@ -1,13 +1,16 @@
 /*//////////////////////////////////////////*/
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
 /*general settings*/
 * {
   margin: 0;
   padding: 0;
   outline: none;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
 }
 
 body {
-  background: #202441;
+  background: #000;
 }
 /*end general settings*/
 
@@ -52,7 +55,7 @@ body {
 }
 
 .navbar ul li a {
-  color: #FBFBFB;
+  color: #C7260A;
   text-decoration: none;
   outline: none;
 }
@@ -82,7 +85,7 @@ body {
 }
 
 .navbar .logo{
-  margin-top: 1%;
+  margin-top: 1%; 
   margin-left: 1%;
 }
 
@@ -140,7 +143,7 @@ body {
 		left: 10px;
 		top: -40px;
 		font-size: 20px;
-		color: white;
+		color: #817882;
 }
 .slider .video {
     position: relative;
@@ -191,37 +194,37 @@ body {
     display: flex;
     justify-content: space-around;
     margin: 0 80px 0 80px;
-    background-color: #202441;
+    background-color: #000;
     height: 200px;
 }
 
 .socials h4{
-    color: #fbfbfb;
+    color: #817882;
     text-align: center;
 }
 
 .socials .icon{
     font-size: 30px;
     padding-top: 15px;
-    color: #fbfbfb;
+    color: #817882;
     padding-top: 40px;
     word-spacing: 10px;
 }
 
 .icon a {
     text-decoration: none;
-    color: #fbfbfb;
+    color: #817882;
     outline: none;
 }
 
 .copyright a {
     text-decoration: none;
-    color: #fbfbfb;
+    color: #817882;
     outline: none;
 }
 
 .copyright {
-    color:#fbfbfb;
+    color:#817882;
     text-align: center;
 }
 
@@ -230,7 +233,7 @@ body {
 }
 
 .partners {
-    color:#fbfbfb;
+    color:#817882;
 }
 
 .partners h4{
@@ -239,7 +242,7 @@ body {
 
 .gifts h4 {
     text-align: center;
-    color: #fbfbfb;
+    color: #817882;
 }
 
 .gift-icon  {
@@ -250,7 +253,7 @@ body {
 
 .gift-icon a {
     text-decoration: none;
-    color: #fbfbfb;
+    color: #817882;
     outline:none;
 }
 
