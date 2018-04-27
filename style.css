@@ -134,13 +134,15 @@ body {
 .slider {
     position: relative;
     margin: 100px 0px;
+		/*decal sur la gauche pour afficher en premier la seconde page*/
+		margin-left: calc(-100% + 10px);
     display: flex;
-		width: calc(100% + 188px);
+		width: calc(400% + 188px);
 		flex-wrap: nowrap;
 }
-.slider #title {
+.slider .slideTitle {
     position: absolute;
-		left: 10px;
+		left: calc(25% - 52px);
 		top: -40px;
 		font-size: 20px;
 		color: #817882;
@@ -170,11 +172,45 @@ body {
     height: calc(120px * 2);
     margin-top: calc(-120px / 2);
 }
-.slider .video:hover .movie {
-}
 .slider .video:hover .movie-hover {
 		opacity: 1;
 }
+/*les fleches*/
+/*camouflage des boutons radio*/
+.slider input {
+	display: none;
+}
+/*emplacement des fleches*/
+.slider .btn {
+	position: absolute;
+	top: 0px;
+	width: 50px;
+	height: 120px;
+	background-color: red;
+	opacity: 0;
+	z-index: 1;
+	transition: all 0.5s;
+}
+.slider .leftbtn {
+	left: calc(25% - 52px);
+}
+.slider .rightbtn {
+	left: calc(50% - 160px);
+}
+/*leur apparition au hover*/
+.slider:hover .btn {
+	opacity: 1;
+}
+/*apparence au clic*/
+.slider .btn:active {
+	background-color: blue;
+}
+/*apparence au check*/
+.slider input:checked + label {
+	background-color: green;
+}
+/*le deplacement du slide avec les fleches*/
+
 /*end slider*/
 
 
