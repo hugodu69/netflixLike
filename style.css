@@ -6,7 +6,7 @@
   padding: 0;
   outline: none;
   font-family: 'Quicksand', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 body {
@@ -45,7 +45,8 @@ body {
   flex-direction: row;
   width: 55%;
   justify-content: center;
-  padding-top: 12px;
+  padding-top: 8px;
+  font-size: 18px;
 }
 
 .navbar ul li {
@@ -112,6 +113,21 @@ body {
   top: -100px;
   left: 0px;
 }
+
+.info-back {
+    position: absolute;
+    top: 350px;
+    left: 900px;
+    color: whitesmoke;
+}
+
+.info-back h1 {
+    font-size: 50px;
+}
+
+.info-back p {
+    font-size: 20px;
+}
 /*end video*/
 
 
@@ -158,6 +174,7 @@ body {
     margin: 0px 2px;
     transition: all 0.3s 0.2s;
 }
+/*images avant et apres hover*/
 .slider .wrapper .video img {
     position: absolute;
     top: 0px;
@@ -178,6 +195,32 @@ body {
 }
 .slider .wrapper .video:hover .movie-hover {
 		opacity: 1;
+}
+/*textes sur images avant et apres hover*/
+.slider .wrapper .video div {
+    position: absolute;
+    color: white;
+    font-weight: 400;
+}
+.slider .wrapper .video .title {
+    top: 70%;
+    left: 10%;
+}
+.slider .wrapper .video .info {
+    left: 5%;
+    right: 5%;
+    top: 70%;
+}
+.slider .wrapper .video .info p {
+    font-size: 13px;
+    padding-top: 10px;
+}
+.slider .wrapper .video .info {
+    opacity: 0;
+}
+.slider .wrapper .video:hover .info {
+    opacity: 1;
+    transition-delay: 0.6s;
 }
 /*les fleches*/
 /*camouflage des boutons radio*/
@@ -268,6 +311,19 @@ body {
 
 /*//////////////////////////////////////////*/
 /*poster*/
+#affiche .video {
+    position: relative;
+    width: 188px;
+    height: 320px;
+    margin: 0px;
+    transition: all 0.1s 0.05s;
+}
+#affiche .wrapper {
+		margin-left: 0px;
+}
+#affiche .info {
+    text-align: center;
+}
 
 /*end poster*/
 
